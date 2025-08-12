@@ -24,7 +24,7 @@ export default function ProjectDetailPage() {
   return (
     <main className="pt-16">
       <Seo
-        title={`${project.title} — BrandKit Harmony`}
+        title={`${project.title} — Lavanya & Shankar Architects`}
         description={`${project.title} — ${project.description}`}
         canonical={`/projects/${project.slug}`}
       />

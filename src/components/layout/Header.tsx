@@ -31,7 +31,7 @@ export default function Header() {
     >
       <div className="container flex h-16 items-center justify-between">
         <Link to="/" className="flex items-center gap-2 font-label text-lg">
-          <span className="font-semibold tracking-wide">BrandKit Harmony</span>
+          <span className="font-semibold tracking-wide">Lavanya & Shankar Architects</span>
         </Link>
 
         <nav className="hidden md:flex items-center gap-8">

@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="mt-24 bg-foreground text-primary-foreground">
       <div className="container py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
-          <Link to="/" className="font-label text-lg">BrandKit Harmony</Link>
+          <Link to="/" className="font-label text-lg">Lavanya & Shankar Architects</Link>
           <p className="mt-3 text-sm text-muted-foreground/80">
             Crafting elegant brands, packaging, and digital experiences.
           </p>
@@ -25,7 +25,7 @@ export default function Footer() {
       </div>
       <div className="border-t border-border/40">
         <div className="container py-6 text-xs text-muted-foreground/80 flex items-center justify-between">
-          <span>© {new Date().getFullYear()} BrandKit Harmony</span>
+          <span>© {new Date().getFullYear()} Lavanya & Shankar Architects</span>
           <span>All rights reserved.</span>
         </div>
       </div>

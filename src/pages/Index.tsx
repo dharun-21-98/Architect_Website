@@ -6,7 +6,7 @@ const Index = () => {
   return (
     <main>
       <Seo
-        title="BrandKit Harmony — Premium Branding Studio"
+        title="Lavanya & Shankar Architects — Premium Branding Studio"
         description="A creative studio crafting elegant identities, packaging, and digital experiences."
         canonical="/"
       />

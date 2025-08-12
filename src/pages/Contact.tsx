@@ -16,7 +16,7 @@ export default function ContactPage() {
   return (
     <main className="pt-20">
       <Seo
-        title="Contact — BrandKit Harmony"
+        title="Contact — Lavanya & Shankar Architects"
         description="Get in touch to start your next branding project."
         canonical="/contact"
       />

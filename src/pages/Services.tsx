@@ -15,7 +15,7 @@ export default function ServicesPage() {
   return (
     <main className="pt-20">
       <Seo
-        title="Services — BrandKit Harmony"
+        title="Services — Lavanya & Shankar Architects"
         description="Identity, packaging, web design, and art direction for premium brands."
         canonical="/services"
       />
