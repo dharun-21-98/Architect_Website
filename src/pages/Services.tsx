@@ -3,12 +3,12 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Palette, Package, Layout, PenTool, Layers, Globe } from "lucide-react";
 
 const items = [
-  { icon: Palette, title: "Identity", desc: "Logos, typography, and visual systems." },
-  { icon: Package, title: "Packaging", desc: "Materials, structures, and product presence." },
-  { icon: Layout, title: "Web Design", desc: "Editorial layouts with refined motion." },
-  { icon: PenTool, title: "Art Direction", desc: "Photography and content curation." },
-  { icon: Layers, title: "Brand Guidelines", desc: "Cohesion across every touchpoint." },
-  { icon: Globe, title: "Digital Branding", desc: "From product to marketing ecosystems." },
+  { icon: Palette, title: "Architectural Design"},
+  { icon: Package, title: "Interior Design, Detailing and Deco​r"},
+  { icon: Layout, title: "Layout and Masterplan Design​"},
+  { icon: PenTool, title: "Bid Documentation​"},
+  { icon: Layers, title: "Site Visit In Stages​"},
+  { icon: Globe, title: "Cost and Variance Analysis​"},
 ];
 
 export default function ServicesPage() {
@@ -16,7 +16,7 @@ export default function ServicesPage() {
     <main className="pt-20">
       <Seo
         title="Services — Lavanya & Shankar Architects"
-        description="Identity, packaging, web design, and art direction for premium brands."
+        description="Lavanya & Shankar is an architectural firm based in Chennai has been in the business from 1999. It is headed by a husband and wife team, S.Shankaranarayanan (Shankar) and Lavanya. The firm started as a boutique firm has grown into a full-fledged one."
         canonical="/services"
       />
       <section className="container py-12">

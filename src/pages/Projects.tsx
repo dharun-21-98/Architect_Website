@@ -6,7 +6,7 @@ export default function ProjectsPage() {
     <main className="pt-20">
       <Seo
         title="Projects — Lavanya & Shankar Architects"
-        description="Explore branding, packaging, and digital projects crafted with elegance."
+        description="Lavanya & Shankar is an architectural firm based in Chennai has been in the business from 1999. It is headed by a husband and wife team, S.Shankaranarayanan (Shankar) and Lavanya. The firm started as a boutique firm has grown into a full-fledged one."
         canonical="/projects"
       />
       <section className="container py-12">

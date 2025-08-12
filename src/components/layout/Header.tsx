@@ -31,7 +31,8 @@ export default function Header() {
     >
       <div className="container flex h-16 items-center justify-between">
         <Link to="/" className="flex items-center gap-2 font-label text-lg">
-          <span className="font-semibold tracking-wide">Lavanya & Shankar Architects</span>
+          <span className={`font-semibold tracking-wide ${scrolled ? "text-white" : "text-white"}`}>
+  Lavanya & Shankar Architects
         </Link>
 
         <nav className="hidden md:flex items-center gap-8">
@@ -73,7 +74,7 @@ export default function Header() {
                 </NavLink>
               ))}
               <Button asChild variant="hero">
-                <Link to="/contact">Start a Project</Link>
+                <Link to="/contact">Contact US</Link>
               </Button>
             </SheetContent>
           </Sheet>
