@@ -17,10 +17,10 @@ export default function Hero() {
         aria-hidden
       />
       <div className="relative z-10 container flex min-h-[70vh] flex-col items-center justify-center text-center">
-        <h1 className="text-4xl md:text-6xl font-semibold max-w-3xl animate-fade-in">
+        <h1 className="text-primary-foreground text-4xl md:text-6xl font-semibold max-w-3xl animate-fade-in">
           Elegant Brands Crafted with Intention
         </h1>
-        <p className="mt-4 text-lg md:text-xl text-muted-foreground max-w-2xl animate-fade-in">
+        <p className="mt-4 text-lg md:text-xl text-primary-foreground/90 max-w-2xl animate-fade-in">
           We help premium products speak with clarity and style across identity, packaging, and digital.
         </p>
         <div className="mt-8 flex gap-4 animate-fade-in">
