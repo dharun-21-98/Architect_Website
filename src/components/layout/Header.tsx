@@ -32,7 +32,8 @@ export default function Header() {
       <div className="container flex h-16 items-center justify-between">
         <Link to="/" className="flex items-center gap-2 font-label text-lg">
           <span className={`font-semibold tracking-wide ${scrolled ? "text-white" : "text-white"}`}>
-  Lavanya & Shankar Architects
+            Lavanya & Shankar Architects
+          </span>
         </Link>
 
         <nav className="hidden md:flex items-center gap-8">
