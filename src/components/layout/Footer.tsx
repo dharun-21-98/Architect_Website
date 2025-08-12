@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Instagram, Twitter, RectangleGoggles } from "lucide-react";
+import { Instagram, Twitter} from "lucide-react";
 
 export default function Footer() {
   return (
@@ -20,7 +20,6 @@ export default function Footer() {
         <div className="flex items-center gap-4">
           <a href="#" aria-label="Instagram" className="text-primary hover:text-accent transition-colors"><Instagram /></a>
           <a href="#" aria-label="Twitter" className="text-primary hover:text-accent transition-colors"><Twitter /></a>
-          <a href="#" aria-label="RectangleGoggles" className="text-primary hover:text-accent transition-colors"><RectangleGoggles /></a>
         </div>
       </div>
       <div className="border-t border-border/40">
