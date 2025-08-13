@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
@@ -13,6 +13,7 @@ const navItems = [
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 10);
@@ -21,17 +22,24 @@ export default function Header() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  // Decide if header should have light or dark text based on scroll or route
+  const isLightText = !scrolled && location.pathname === "/";
+
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-colors ${
         scrolled
-          ? "bg-background/90 backdrop-blur supports-[backdrop-filter]:bg-background/70 border-b"
+          ? "bg-white/90 backdrop-blur supports-[backdrop-filter]:bg-white/70 border-b"
           : "bg-transparent"
       }`}
     >
       <div className="container flex h-16 items-center justify-between">
         <Link to="/" className="flex items-center gap-2 font-label text-lg">
-          <span className={`font-semibold tracking-wide ${scrolled ? "text-white" : "text-white"}`}>
+          <span
+            className={`font-semibold tracking-wide transition-colors ${
+              isLightText ? "text-white" : "text-black"
+            }`}
+          >
             Lavanya & Shankar Architects
           </span>
         </Link>
@@ -42,15 +50,25 @@ export default function Header() {
               key={item.to}
               to={item.to}
               className={({ isActive }) =>
-                `text-sm font-medium transition-colors story-link ${
-                  isActive ? "text-foreground" : "text-muted-foreground hover:text-foreground"
+                `text-sm font-medium transition-colors ${
+                  isLightText
+                    ? isActive
+                      ? "text-white border-b border-white"
+                      : "text-white/80 hover:text-white"
+                    : isActive
+                    ? "text-black border-b border-black"
+                    : "text-gray-600 hover:text-black"
                 }`
               }
             >
               {item.label}
             </NavLink>
           ))}
-          <Button asChild variant="hero" size="sm">
+          <Button
+            asChild
+            size="sm"
+            className={isLightText ? "bg-white text-black" : "bg-black text-white"}
+          >
             <Link to="/contact">Start a Project</Link>
           </Button>
         </nav>
@@ -58,7 +76,12 @@ export default function Header() {
         <div className="md:hidden">
           <Sheet>
             <SheetTrigger asChild>
-              <Button variant="ghost" size="icon" aria-label="Open Menu">
+              <Button
+                variant="ghost"
+                size="icon"
+                aria-label="Open Menu"
+                className={isLightText ? "text-white" : "text-black"}
+              >
                 <Menu />
               </Button>
             </SheetTrigger>
@@ -68,7 +91,7 @@ export default function Header() {
                   key={item.to}
                   to={item.to}
                   className={({ isActive }) =>
-                    `text-lg ${isActive ? "text-foreground" : "text-muted-foreground"}`
+                    `text-lg ${isActive ? "text-black" : "text-gray-600"}`
                   }
                 >
                   {item.label}
