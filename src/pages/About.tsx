@@ -6,7 +6,7 @@ export default function AboutPage() {
     <main className="pt-20">
       <Seo
         title="About — Lavanya & Shankar Architects"
-        description="We are a creative studio crafting elegant brand systems for premium products."
+        description="Lavanya & Shankar is an architectural firm based in Chennai has been in the business from 1999. It is headed by a husband and wife team, S.Shankaranarayanan (Shankar) and Lavanya. The firm started as a boutique firm has grown into a full-fledged one. ."
         canonical="/about"
       />
       <section className="container grid grid-cols-1 md:grid-cols-2 gap-12 py-12 items-center">
@@ -17,7 +17,7 @@ export default function AboutPage() {
             Lavanya & Shankar Architects is a boutique studio focused on timeless identity, tactile packaging, and calm digital experiences.
           </p>
           <p className="mt-3 text-muted-foreground">
-            Our approach balances strategic clarity with crafted details, ensuring each touchpoint feels intentional and premium.
+            An enthusiastic architect duo, Lavanya & Shankar bring together a warmth which blends seamlessly into their design philosophy. Armed with years of expertise in the field of architecture and interiors ,their ideology always brings in a single point contact solution for the clients – be it design consultation, project management or execution. Interpreting local material and concepts with a contemporary design sensibility, the attention to detail constantly enhances user brief & aspiration.
           </p>
         </div>
       </section>
