@@ -10,7 +10,7 @@ export const projects: Project[] = [
     id: "1",
     title: "Maison Aurelia",
     slug: "maison-aurelia",
-    category: "Branding" as const,
+    category: "Commercial" as const,
     image: p1,
     description:
       "A timeless identity for a boutique perfumery blending heritage with modern elegance.",
@@ -19,7 +19,7 @@ export const projects: Project[] = [
     id: "2",
     title: "Sage & Co.",
     slug: "sage-and-co",
-    category: "Packaging" as const,
+    category: "Residential" as const,
     image: p2,
     description:
       "Sustainable packaging system with tactile materials and refined color accents.",
@@ -28,7 +28,7 @@ export const projects: Project[] = [
     id: "3",
     title: "Gilded Press",
     slug: "gilded-press",
-    category: "Branding" as const,
+    category: "Commercial" as const,
     image: p3,
     description:
       "Editorial branding featuring bespoke typography and subtle gilding details.",
@@ -37,7 +37,7 @@ export const projects: Project[] = [
     id: "4",
     title: "Olive Lane",
     slug: "olive-lane",
-    category: "Packaging" as const,
+    category: "Villa" as const,
     image: p4,
     description:
       "Artisanal food packaging with elegant labels and considered information design.",
@@ -46,7 +46,7 @@ export const projects: Project[] = [
     id: "5",
     title: "Studio Verdant",
     slug: "studio-verdant",
-    category: "Digital" as const,
+    category: "Residential" as const,
     image: p5,
     description:
       "A calm digital experience featuring editorial layouts and refined motion.",
@@ -55,7 +55,7 @@ export const projects: Project[] = [
     id: "6",
     title: "Linea Cards",
     slug: "linea-cards",
-    category: "Branding" as const,
+    category: "Commercial" as const,
     image: p6,
     description:
       "Tactile stationery system with foil accents and precise grid structures.",

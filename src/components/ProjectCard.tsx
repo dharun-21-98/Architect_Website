@@ -5,7 +5,7 @@ export interface Project {
   id: string;
   title: string;
   slug: string;
-  category: "Branding" | "Packaging" | "Digital";
+  category: "Commercial" | "Residential" | "Villa";
   image: string;
   description?: string;
 }

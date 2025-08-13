@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { useMemo, useState } from "react";
 import { projects } from "@/data/projects";
 
-const categories = ["All", "Branding", "Packaging", "Digital"] as const;
+const categories = ["All", "Commercial", "Residential", "Villa"] as const;
 
 type Category = typeof categories[number];
 
